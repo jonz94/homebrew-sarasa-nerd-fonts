@@ -1,0 +1,14 @@
+# toplevel
+/.bundle/
+/.idea/
+/bin/
+/tmp/
+/vendor/
+/venv/
+
+# anywhere in the tree
+*~
+*.iml
+.DS_Store
+.ruby-version
+coverage

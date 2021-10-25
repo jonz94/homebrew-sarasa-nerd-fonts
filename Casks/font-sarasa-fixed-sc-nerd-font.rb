@@ -1,9 +1,9 @@
 cask "font-sarasa-fixed-sc-nerd-font" do
-  version "0.34.6"
-  sha256 "665ffdfa4534c5a127fcc1bf4e931e1b702e2dca1e89e6bc5156c23875230723"
+  version "0.34.7"
+  sha256 "8d7882c839fe6d55af044ad464fbc7c517d969718788d83077b64ea979f64756"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-fixed-sc-nerd-font.zip"
-  name "Sarasa fixed sc Nerd Fonts"
+  name "Sarasa Fixed SC Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

@@ -1,9 +1,9 @@
 cask "font-sarasa-term-slab-sc-nerd-font" do
-  version "0.34.6"
-  sha256 "4883eb1861141ccfdd152b69be86e9abebaaf1ec2d21d3586465b27980060fc0"
+  version "0.34.7"
+  sha256 "1c9d813c172ab2380c3941f13105536a4340cf59c38d183d76a05d95f5ee31af"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-term-slab-sc-nerd-font.zip"
-  name "Sarasa term-slab sc Nerd Fonts"
+  name "Sarasa Term Slab SC Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

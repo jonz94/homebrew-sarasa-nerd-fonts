@@ -1,9 +1,9 @@
 cask "font-sarasa-mono-slab-k-nerd-font" do
-  version "0.34.6"
-  sha256 "5116c6e816ee3dcf577bad52fd55bcf968b9371ef0d0491ce568666924d8d989"
+  version "0.34.7"
+  sha256 "d8a65032d88629835544291fdb8d9a556a55449684e92aff001d1bb759bbfc44"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-mono-slab-k-nerd-font.zip"
-  name "Sarasa mono-slab k Nerd Fonts"
+  name "Sarasa Mono Slab K Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

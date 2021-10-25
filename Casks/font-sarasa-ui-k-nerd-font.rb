@@ -1,9 +1,9 @@
 cask "font-sarasa-ui-k-nerd-font" do
-  version "0.34.6"
-  sha256 "f339ace4ad9d5eb2c51d94c375e694be7f870eabf0f7b0b416f3a8746b88fd96"
+  version "0.34.7"
+  sha256 "16cb8c8af9d83d0a3b73368c555c2384bf757f352111f4a2b0061f819b4ac9ea"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-ui-k-nerd-font.zip"
-  name "Sarasa ui k Nerd Fonts"
+  name "Sarasa UI K Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

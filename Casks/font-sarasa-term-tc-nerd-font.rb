@@ -1,9 +1,9 @@
 cask "font-sarasa-term-tc-nerd-font" do
-  version "0.34.6"
-  sha256 "d7bf85849a1a6255c28c2f166cc652a6ad1e9816b405599571ee88accb0606d2"
+  version "0.34.7"
+  sha256 "9662be9d113065df9d141385bd2fbca5f8c125c13e71235f385c8edf40b6a81b"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-term-tc-nerd-font.zip"
-  name "Sarasa term tc Nerd Fonts"
+  name "Sarasa Term TC Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

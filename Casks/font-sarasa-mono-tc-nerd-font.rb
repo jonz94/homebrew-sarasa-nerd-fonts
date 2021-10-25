@@ -1,9 +1,9 @@
 cask "font-sarasa-mono-tc-nerd-font" do
-  version "0.34.6"
-  sha256 "3caf48766d7d0bccbf92abc50e1724591e8517dc4587f2d4a314df478517050c"
+  version "0.34.7"
+  sha256 "686b451e9334790001d1d731520ca180aab6920f2d796b0a5b81febc2a109904"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-mono-tc-nerd-font.zip"
-  name "Sarasa mono tc Nerd Fonts"
+  name "Sarasa Mono TC Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

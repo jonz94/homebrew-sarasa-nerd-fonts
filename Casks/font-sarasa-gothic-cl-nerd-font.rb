@@ -1,9 +1,9 @@
 cask "font-sarasa-gothic-cl-nerd-font" do
-  version "0.34.6"
-  sha256 "6d21a51e1f11d34f9d15e83a9a56ef8c193b79a55a1b1806f02d1ec1bffd4cc1"
+  version "0.34.7"
+  sha256 "5580e772cc9a315452703c054325f7ee3835d7db3f516c8a23567320325d7916"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-gothic-cl-nerd-font.zip"
-  name "Sarasa gothic cl Nerd Fonts"
+  name "Sarasa Gothic CL Nerd Fonts"
   desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 

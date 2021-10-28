@@ -14,3 +14,8 @@ Or:
 $ brew tap jonz94/sarasa-nerd-font     # You only need to do this once!
 $ brew install <cask>
 ```
+
+## License
+
+- Code is under the [BSD 2-clause "Simplified" License](LICENSE).
+- Fonts are under the [SIL Open Font License 1.1](https://github.com/be5invis/Sarasa-Gothic/blob/master/LICENSE).

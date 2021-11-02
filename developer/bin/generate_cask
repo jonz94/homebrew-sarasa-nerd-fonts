@@ -20,7 +20,13 @@ for i in ${!styles[@]}; do
     url="https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v${version}/${name}-nerd-font.zip"
 
     echo "Downloading ${name}-nerd-font.zip to compute hashes!"
-    curl --progress-bar --fail -L $url -o "${tmp}/${name}.zip"
+
+    # silent mode if script is running by Github Actions
+    if [[ "${GITHUB_ACTIONS}" == "true" ]]; then
+      curl --silent --fail -L $url -o "${tmp}/${name}.zip"
+    else
+      curl --progress-bar --fail -L $url -o "${tmp}/${name}.zip"
+    fi
 
     sha256=$(sha256sum "${tmp}/${name}.zip" | cut -f 1 -d " ")
     echo "Computed hash: ${sha256}"

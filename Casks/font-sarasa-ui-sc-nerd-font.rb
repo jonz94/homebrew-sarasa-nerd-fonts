@@ -1,6 +1,6 @@
 cask "font-sarasa-ui-sc-nerd-font" do
-  version "0.35.1"
-  sha256 "018344cb2b00ac3a184537521b9108510292fbc3bc83a34d626a1e859ca7115c"
+  version "0.35.2"
+  sha256 "9ddd07a80e964d10a0b54285d6525b28b5a0f7a22ac4ab32c01a9ecefbb95a89"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-ui-sc-nerd-font.zip"
   name "Sarasa UI SC Nerd Fonts"

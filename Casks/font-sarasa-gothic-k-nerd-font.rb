@@ -1,6 +1,6 @@
 cask "font-sarasa-gothic-k-nerd-font" do
-  version "0.35.4"
-  sha256 "14630b00674f007233659301c8b4a30b2ba75492c41554bbb4f9f2c056a18692"
+  version "0.35.5"
+  sha256 "3fb81832e6adbb4873fdf9c940a91f3cb5ed707b763d0b12ebfd16015c9ce0f5"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-gothic-k-nerd-font.zip"
   name "Sarasa Gothic K Nerd Fonts"

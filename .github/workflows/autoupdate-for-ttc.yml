@@ -1,0 +1,66 @@
+name: autoupdate for ttc
+
+on:
+  # runs every hour
+  schedule:
+    - cron: "30 * * * *"
+  # allow manually trigger
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: github.repository == 'jonz94/homebrew-sarasa-nerd-fonts'
+    outputs:
+      should-update: ${{ steps.check.outputs.should-update }}
+      latest-version: ${{ steps.check.outputs.latest-version }}
+      current-version: ${{ steps.check.outputs.current-version }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: check
+        id: check
+        run: |
+          # get the latest version
+          LATEST_VERSION=$(curl -fsSL https://api.github.com/repos/jonz94/ttc-sarasa-gothic-nerd-fonts/releases/latest | jq -r .tag_name | cut -d v -f 2)
+          echo latest version of jonz94/ttc-sarasa-gothic-nerd-fonts is ${LATEST_VERSION}
+
+          # get the current version
+          CURRENT_VERSION=$(grep "version \"" Casks/font-sarasa-nerd-font-ttc.rb | cut -d\" -f 2)
+          echo current version of sarasa-nerd-font-ttc is ${CURRENT_VERSION}
+
+          echo "::set-output name=latest-version::${LATEST_VERSION}"
+          echo "::set-output name=current-version::${CURRENT_VERSION}"
+
+          if [[ "$LATEST_VERSION" == "$CURRENT_VERSION" ]]; then
+            echo everything is up to date!
+            echo "::set-output name=should-update::false"
+          else
+            echo a newer version is available
+            echo "::set-output name=should-update::true"
+          fi
+
+  update-ttc:
+    name: update ttc
+    needs: check
+    if: ${{ needs.check.outputs.should-update == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.WORKFLOW_PERSONAL_ACCESS_TOKEN }}
+      - name: update
+        run: |
+          bash developer/bin/generate_cask_for_ttc
+
+          LATEST_VERSION="${{ needs.check.outputs.latest-version }}"
+          CURRENT_VERSION="${{ needs.check.outputs.current-version }}"
+
+          git status
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git commit -m "🤖 ci: update sarasa-nerd-font-ttc from ${CURRENT_VERSION} to ${LATEST_VERSION}"
+          git push

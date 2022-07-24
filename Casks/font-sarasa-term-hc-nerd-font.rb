@@ -1,6 +1,6 @@
 cask "font-sarasa-term-hc-nerd-font" do
-  version "0.36.7"
-  sha256 "e1f4e7a24b03e18b823420a31d4038b9002111eb9f38f1e24ec307a548e6eea4"
+  version "0.36.8"
+  sha256 "db67f40e4a2e417f75b76332a8cadf9e949a23550ab911e1200f411f82603a2e"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-term-hc-nerd-font.zip"
   name "Sarasa Term HC Nerd Fonts"

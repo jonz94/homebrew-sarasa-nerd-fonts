@@ -19,7 +19,7 @@ else
   curl --progress-bar --fail -L $url -o "${tmp}/sarasa-nerd-font-ttc.zip"
 fi
 
-sha256=$(sha256sum "${tmp}/ttc.zip" | cut -f 1 -d " ")
+sha256=$(sha256sum "${tmp}/sarasa-nerd-font-ttc.zip" | cut -f 1 -d " ")
 echo "Computed hash: ${sha256}"
 
 echo "Writing font-sarasa-nerd-font-ttc cask"

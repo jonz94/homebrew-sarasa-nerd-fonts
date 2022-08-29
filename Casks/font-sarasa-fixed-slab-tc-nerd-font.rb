@@ -1,6 +1,6 @@
 cask "font-sarasa-fixed-slab-tc-nerd-font" do
-  version "0.36.8"
-  sha256 "7c44160eacb23fa0f695f23974a03b95c9da6e3724d9909033b9dcd0384d3aaf"
+  version "0.37.0"
+  sha256 "12a7818e3d696d7b3cf3bc46547a6aac093824e7181fe2c117164864479337bf"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-fixed-slab-tc-nerd-font.zip"
   name "Sarasa Fixed Slab TC Nerd Fonts"

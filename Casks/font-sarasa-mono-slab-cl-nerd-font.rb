@@ -1,6 +1,6 @@
 cask "font-sarasa-mono-slab-cl-nerd-font" do
-  version "0.37.2-0"
-  sha256 "f7ba240c9d6792c19b96ee7b64f6335a0bf73d272121d932f16716bc14ceb6fd"
+  version "0.37.3-0"
+  sha256 "94ce9b84d66aee84e3be8d57f42a97b8058f71c7118d9fca9d5080ba220d070d"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-mono-slab-cl-nerd-font.zip"
   name "Sarasa Mono Slab CL Nerd Fonts"

@@ -31,7 +31,7 @@ cask "font-sarasa-nerd-font-ttc" do
 
   url "https://github.com/jonz94/ttc-sarasa-gothic-nerd-fonts/releases/download/v#{version}/sarasa-nerd-font-ttc.zip"
   name "Sarasa Gothic Nerd Fonts TTC"
-  desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched, all-in-one TTC format)"
+  desc "CJK programming font based on Iosevka and Source Han Sans (Nerd Fonts patched)"
   homepage "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts"
 
   font "sarasa-bold-nerd-font.ttc"

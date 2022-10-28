@@ -2,8 +2,8 @@ name: autoupdate for ttc
 
 on:
   # runs every hour
-  schedule:
-    - cron: "30 * * * *"
+  #schedule:
+  #  - cron: "30 * * * *"
   # allow manually trigger
   workflow_dispatch:
 

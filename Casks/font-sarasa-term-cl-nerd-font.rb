@@ -1,6 +1,6 @@
 cask "font-sarasa-term-cl-nerd-font" do
-  version "0.41.4-0"
-  sha256 "21a40d093b0e43f0e954e0a1df7e99f537764e1046349e556681320aec93a366"
+  version "0.41.5-0"
+  sha256 "92fad59c384fbbcf1a0599282d1c13280bbc8785196dd6e0545e06e9d5948065"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-term-cl-nerd-font.zip"
   name "Sarasa Term CL Nerd Fonts"

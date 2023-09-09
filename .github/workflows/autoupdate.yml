@@ -76,7 +76,7 @@ jobs:
           token: ${{ secrets.WORKFLOW_PERSONAL_ACCESS_TOKEN }}
       - name: update
         run: |
-          bash developer/bin/generate_cask
+          bash -e developer/bin/generate_cask.sh
 
           LATEST_VERSION="${{ needs.check.outputs.latest-version }}"
           CURRENT_VERSION="${{ needs.check.outputs.current-version }}"

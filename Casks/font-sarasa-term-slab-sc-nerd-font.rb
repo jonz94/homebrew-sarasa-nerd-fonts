@@ -1,6 +1,6 @@
 cask "font-sarasa-term-slab-sc-nerd-font" do
-  version "0.42.5-0"
-  sha256 "54dba8b7eef86119f9957bab764833bf0471386cb1a5bb0203fd284bdf0a5ab6"
+  version "0.42.6-0"
+  sha256 "ad1b031f37b7d474b1d4988388efc8551589dd6f392b23b421cb77d0f4fe7648"
 
   url "https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts/releases/download/v#{version}/sarasa-term-slab-sc-nerd-font.zip"
   name "Sarasa Term Slab SC Nerd Fonts"

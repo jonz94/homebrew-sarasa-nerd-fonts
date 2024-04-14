@@ -11,8 +11,10 @@ version=$(curl -fsSL "https://api.github.com/repos/jonz94/Sarasa-Gothic-Nerd-Fon
 styles=(    "fixed" "fixed-slab" "mono" "mono-slab" "term" "term-slab" "gothic" "ui")
 stylesName=("Fixed" "Fixed Slab" "Mono" "Mono Slab" "Term" "Term Slab" "Gothic" "UI")
 
-orthographies=(    "cl" "hc" "j" "k" "sc" "tc")
-orthographiesName=("CL" "HC" "J" "K" "SC" "TC")
+#orthographies=(    "cl" "hc" "j" "k" "sc" "tc")
+#orthographiesName=("CL" "HC" "J" "K" "SC" "TC")
+orthographies=(    "cl" "hc" "k" "sc" "tc")
+orthographiesName=("CL" "HC" "K" "SC" "TC")
 
 for i in ${!styles[@]}; do
   for j in ${!orthographies[@]}; do
